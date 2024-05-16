@@ -9,9 +9,6 @@ from vidgear.gears import CamGear
 
 model = YOLO('best_full_integer_quant_edgetpu.tflite')
 
-
-
-#cap = cv2.VideoCapture(0)
 stream = CamGear(source='https://youtu.be/fgqtvt839RE', stream_mode = True, logging=True).start() # YouTube Video URL as input
 
 my_file = open("coco1.txt", "r")
