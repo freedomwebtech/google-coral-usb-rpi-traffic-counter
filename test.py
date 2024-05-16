@@ -56,7 +56,7 @@ while True:
     # Display FPS on frame
     counter=(len(list1))    
     cv2.line(frame,(1,305),(799,305),(0,255,0),2)
-    cvzone.putTextRect(frame,f'Counter{counter}',(50,60),2,2)
+    cvzone.putTextRect(frame,f'Counter:-{counter}',(50,60),2,2)
     cv2.imshow("FRAME", frame)
 
     if cv2.waitKey(1) & 0xFF == 27:
