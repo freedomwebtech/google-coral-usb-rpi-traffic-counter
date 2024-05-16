@@ -19,7 +19,7 @@ data = my_file.read()
 class_list = data.split("\n")
 
 
-count=0
+
 tracker=Tracker()
 cy1=305
 offset=8
@@ -29,9 +29,7 @@ while True:
     if frame is None:
         break
     frame=cv2.resize(frame,(800,600))
-#    frame_count += 1
-#    if frame_count % 2 != 0:
-#        continue
+
 
     results = model.predict(frame,imgsz=240)
     a = results[0].boxes.data
