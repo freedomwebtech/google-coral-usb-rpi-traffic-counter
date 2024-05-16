@@ -1,6 +1,5 @@
 import cv2
 import pandas as pd
-import numpy as np
 from ultralytics import YOLO
 import cvzone
 from tracker import*
